@@ -6,16 +6,7 @@ const app = express();
 dotenv.config();
 
 const cors = require("cors");
-app.use(cors(
-
-  {
-    origin :["https://email-service-frontend-ilmg.vercel.app"],
-    methods :["POST","GET"],
-    credentials:true
-  }
-)); // Use this after the variable declaration
-
-
+app.use(cors()); // Use this after the variable declaration
 
 app.use(express.json()); // tell the server to accept the json data from frontend
 
