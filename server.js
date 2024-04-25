@@ -5,8 +5,8 @@ const emailRoutes = require("./routes/emailRoutes");
 const app = express();
 dotenv.config();
 
-const cors = require("cors");
-app.use(cors()); // Use this after the variable declaration
+var cors = require('cors');
+app.use(cors());
 
 app.use(express.json()); // tell the server to accept the json data from frontend
 
